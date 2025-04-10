@@ -1,13 +1,13 @@
 <?php
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
+    $email= $_POST['email'];
+    $senha= $_POST['senha'];
 
-    if ($email == 'aluno@email.com' && $senha == '1234'){
-        //SEGUE PARA A PÁGINA privada.php
-        $nome = "Aluno";
-        header('Location privada.php?nome='.nome);
-    }else{
-        //SEGUE PARA A PÁGINA erro.php
-        header('Location: erro.php');
-    }
+    if($email == 'ana@email.com' && $senha == '1234'){
+//pagina privada
+   $nome = "Ana";
+   header('Location: privada.php?nome='.$nome);
+}else{
+    //pagina de erro
+    header('Location: erro.php');
+  }
 ?>
